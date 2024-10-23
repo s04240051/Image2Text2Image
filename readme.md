@@ -1,0 +1,9 @@
+# Image2Text2Image: A Novel Framework for Label-Free Evaluation of Image-to-Text Generation with Text-to-Image Diffusion Models
+--- 
+## Abstract: 
+Evaluating the quality of automatically generated image descriptions is a complex task that requires metrics capturing various dimensions, such as grammaticality, coverage, accuracy, and truthfulness. 
+Although human evaluation provides valuable insights, its cost and time-consuming nature pose limitations.
+Existing automated metrics like BLEU, ROUGE, METEOR, and CIDEr attempt to fill this gap, but they often exhibit weak correlations with human judgment. To address this challenge, we propose a novel evaluation framework called Image2Text2Image, which leverages diffusion models, such as Stable Diffusion or DALL-E, for text-to-image generation.
+In the Image2Text2Image framework, an input image is first processed by a selected image captioning model, chosen for evaluation, to generate a textual description. Using this generated description, a diffusion model then creates a new image. By comparing features extracted from the original and generated images, we measure their similarity using a designated similarity metric. A high similarity score suggests that the model has produced a faithful textual description, while a low score highlights discrepancies, revealing potential weaknesses in the model's performance. Notably, our framework does not rely on human-annotated reference captions, making it a valuable tool for assessing image captioning models.
+Extensive experiments and human evaluations validate the efficacy of our proposed Image2Text2Image evaluation framework.
+## Applications (coming soon)
